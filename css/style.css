@@ -245,16 +245,16 @@ fieldset[disabled] .s-btn {
 /* Styles
 ------------------------------ */
 .s-btn--white-brd {
-  color: #fff;
+  color: #65768e;
   background: transparent;
   border-width: 0.0625rem;
   border-style: solid;
-  border-color: #fff;
+  border-color: #65768e;
 }
 
 .s-btn--white-brd:focus, .s-btn--white-brd:hover {
-  color: #222324;
-  background: #fff;
+  color: #fff;
+  background: #65768e;
   border-color: #fff;
 }
 
