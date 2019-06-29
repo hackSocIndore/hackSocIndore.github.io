@@ -1,0 +1,26 @@
+.fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 500ms linear;
+}
+.text-white.dark {
+    color: #222324 !important;
+}
+.main-sponsor {
+    max-height: 12vh;
+}
+.sponsor {
+    max-height: 10vh;
+}
+.row-footer {
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #222324;
+    color: white;
+}
+.heading {
+    margin-bottom: 75px;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}

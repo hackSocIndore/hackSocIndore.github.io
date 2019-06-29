@@ -34,30 +34,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <style>
-        .fixed-top.scrolled {
-            background-color: #fff !important;
-            transition: background-color 500ms linear;
-        }
-        .text-white.dark {
-            color: #222324 !important;
-        }
-        .main-sponsor {
-            max-height: 12vh;
-        }
-        .sponsor {
-            max-height: 10vh;
-        }
-        .row-footer {
-            margin: 0 auto;
-            padding: 20px 0;
-            background-color: #222324;
-            color: white;
-        }
-        .heading {
-            margin-bottom: 75px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css"/>
+
 </head>
 <!-- End Head -->
 
@@ -74,13 +52,16 @@
         <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#"><span class="text-white">Events</span></a>
+                <a class="nav-link" href="#myCarousel"><span class="text-white">Events</span></a>
             </li>
             <li class="nav-item dark-text">
-                <a class="nav-link" href="#"><span class="text-white">Sponsors</span></a>
+                <a class="nav-link" href="#sponsors"><span class="text-white">Sponsors</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><span class="text-white">About</span></a>
+                <a class="nav-link" href="#about"><span class="text-white">About</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="coc.html"><span class="text-white">Code of Conduct</span></a>
             </li>
         </ul>
     </nav>
@@ -90,14 +71,7 @@
     <!--========== SWIPER SLIDER ==========-->
     <div style="width: 100vw; max-width: 100%; height: 100vh; overflow: hidden">
 
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ul>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
 
                 <!-- The slideshow -->
                 <div class="carousel-inner">
@@ -111,6 +85,13 @@
                         <img src="img/event_posters/slide1.png" width="100%" alt="New York">
                     </div>
                 </div>
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
 
                 <!-- Left and right controls -->
                 <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
@@ -133,7 +114,7 @@
 
     <div class="container-fluid" id="sponsors" style="background: #00a0f0; padding: 75px;">
 
-        <h1 class="text-center heading">PAST SPONSORS AND PARTNERS</h1>
+        <h1 class="text-center heading">Sponsors & Partners</h1>
 
         <div class="row align-items-center">
 
@@ -154,9 +135,9 @@
     <!-- End Features -->
 
     <!-- Culture -->
-    <div class="container-fluid" id="about">
+    <div class="container-fluid mr-0 pr-0" id="about">
         <div class="row">
-            <div class="row col-sm-8 align-items-center" style="padding-top: 50px">
+            <div class="row col-sm-8 align-items-center pr-0 mr-0" style="padding-top: 50px">
                 <div class="col-sm-6">
                     <p class="text-uppercase">Culture</p>
                     <div>
@@ -174,7 +155,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-4" style="overflow-x: hidden">
+            <div class="col-sm-4 align-items-right" style="max-width: 100vw; overflow-x: hidden">
                 <img height="512px" src="img/about.jpg" alt="Image">
             </div>
         </div>
@@ -191,7 +172,7 @@
                     <a href="https://twitter.com/hack_soc" target="_blank"><span style="color: white">Twitter</span></a>
                 </div>
                 <div class="col-sm-4">
-                    © Copyright 2015 Ristorante Con Fusion
+                    © Copyright 2019 hackSocIndore™
                 </div>
                 <div class="col-sm-4">
                         Designed and Developed by <a href="https://github.com/harshmandalgi" target="_blank"><span>Harsh Mandalgi</span></a>
@@ -201,16 +182,7 @@
     </footer>
     <!--========== END FOOTER ==========-->
 
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $(".fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-                var $text = $(".text-white");
-                $text.toggleClass('dark', $(this).scrollTop() > $nav.height())
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 <!-- End Body -->
