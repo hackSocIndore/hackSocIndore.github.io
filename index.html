@@ -15,26 +15,49 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>hackSocIndore - Developer Student Group</title>
+    <title>hackSocIndore</title>
 
     <!-- Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
 
-    <!-- Vendor Styles -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- Theme Styles -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/global/global.css" rel="stylesheet" type="text/css" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- Bootstrap --><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .fixed-top.scrolled {
+            background-color: #fff !important;
+            transition: background-color 500ms linear;
+        }
+        .text-white.dark {
+            color: #222324 !important;
+        }
+        .main-sponsor {
+            max-height: 12vh;
+        }
+        .sponsor {
+            max-height: 10vh;
+        }
+        .row-footer {
+            margin: 0 auto;
+            padding: 20px 0;
+            background-color: #222324;
+            color: white;
+        }
+        .heading {
+            margin-bottom: 75px;
+        }
+    </style>
 </head>
 <!-- End Head -->
 
@@ -43,452 +66,151 @@
 <body>
 
     <!--========== HEADER ==========-->
-    <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
-        <!-- Navbar -->
-        <div class="s-header__navbar">
-            <div class="s-header__container">
-                <div class="s-header__navbar-row">
-                    <div class="s-header__navbar-row-col">
-                        <!-- Logo -->
-                        <div class="s-header__logo">
-                            <a href="http://hacksocindore.github.io/" class="s-header__logo-link">
-                                <img class="s-header__logo-img s-header__logo-img-default" src="img/namelogo_trans.png"
-                                    width="210" height="60" alt="Logo-upper-layer">
-                                <img class="s-header__logo-img s-header__logo-img-shrink" src="img/namelogo_trans.png"
-                                    width="210" height="60" alt="Logo-lower-layer">
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
-                    <div class="s-header__navbar-row-col">
-                        <!-- Trigger -->
-                        <a href="javascript:void(0);" class="s-header__trigger js__trigger">
-                            <span class="s-header__trigger-icon"></span>
-                            <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
-                                <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25"
-                                    stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-                            </svg>
-                        </a>
-                        <!-- End Trigger -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar -->
+    <!-- Start Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#"><img src="img/namelogo_trans.png" width="200px"/></a>
 
-        <!-- Overlay -->
-        <div class="s-header-bg-overlay js__bg-overlay">
-            <!-- Nav -->
-            <nav class="s-header__nav js__scrollbar">
-                <div class="container-fluid">
-                    <!-- Menu List -->
-                    <ul class="list-unstyled s-header__nav-menu">
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active">Event
-                                Registration</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                target="_blank" href="https://goo.gl/forms/0aWq3dhlYZM1YtiP2">Feedback Form for Linux
-                                Workshop-16/09/2018</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="https://goo.gl/forms/zYruf8beqUY4Y2Kt2" target="_blank">Git and Github Workshop</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                onclick='alert("Registrations for this event are not open yet.");'>Hacktobathon</a></li>
-                        <!--<li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" onclick='alert("Registrations for this event are not open yet.");'>Hacktobathon</a></li>-->
-                    </ul>
-                    <!-- End Menu List -->
-
-                    <!-- Menu List -->
-                    <ul class="list-unstyled s-header__nav-menu">
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                onclick='alert("Club Member Registrations are not open yet.");'>Join Us</a></li>
-
-                    </ul>
-                    <!-- End Menu List -->
-                </div>
-            </nav>
-            <!-- End Nav -->
-
-
-
-            <!-- Action -->
-            <ul class="list-inline s-header__action s-header__action--rb">
-                <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="https://www.facebook.com/HackSocIndore/">
-                        <i class="g-padding-r-5--xs ti-facebook"></i>
-                        <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
-                    </a>
-                </li>
-                <!--<li class="s-header__action-item">
-                        <a class="s-header__action-link" href="#">
-                            <i class="g-padding-r-5--xs ti-twitter"></i>
-                            <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
-                        </a>
-                    </li>-->
-                <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="https://www.instagram.com/hacksocindore/">
-                        <i class="g-padding-r-5--xs ti-instagram"></i>
-                        <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- End Action -->
-        </div>
-        <!-- End Overlay -->
-    </header>
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="text-white">Events</span></a>
+            </li>
+            <li class="nav-item dark-text">
+                <a class="nav-link" href="#"><span class="text-white">Sponsors</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="text-white">About</span></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End Navbar -->
     <!--========== END HEADER ==========-->
 
     <!--========== SWIPER SLIDER ==========-->
-    <div class="s-swiper js__swiper-one-item">
-        <!-- Swiper Wrapper -->
-        <div class="swiper-wrapper">
-                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/slide3_1.png');">
-                    <div class="container g-text-center--xs g-ver-center--xs">
-                        <div class="g-margin-b-30--xs">
-                            <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">
-                        </div>
-                        <!--<a class="js__popup__youtube" href="https://www.youtube.com/watch?v=lcFYdgZKZxY" title="Intro Video">
-                                <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-control-play"></i>
-                            </a>-->
+    <div style="width: 100vw; max-width: 100%; height: 100vh; overflow: hidden">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/event_posters/slide3_1.png" width="100%" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/event_posters/git871.png" width="100%" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/event_posters/slide1.png" width="100%" alt="New York">
                     </div>
                 </div>
-    
-           
-            <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/git871.png');">
-                <div class="container g-text-center--xs g-ver-center--xs">
-                    <div class="g-margin-b-30--xs">
-                        <div class="g-margin-b-30--xs">
-                            <h2 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">
-                        </div>
-                        <!--<a class="js__popup__youtube" href="https://www.youtube.com/watch?v=lcFYdgZKZxY" title="Intro Video">
-                                <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-control-play"></i>
-                            </a>-->
-                    </div>
-                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
-
-            <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/slide1.png');">
-                <div class="container g-text-center--xs g-ver-center--xs">
-                    <div class="g-margin-b-30--xs">
-                        <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">
-                    </div>
-                    <!--<a class="js__popup__youtube" href="https://www.youtube.com/watch?v=lcFYdgZKZxY" title="Intro Video">
-                            <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-control-play"></i>
-                        </a>-->
-                </div>
-            </div>
-                        <!--
-                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/slide3.png');">
-                    <div class="container g-text-center--xs g-ver-center--xs">
-                        <div class="g-margin-b-30--xs">
-                            <div class="g-margin-b-30--xs">
-                                <h2 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">
-                            </div>
-                        
-                            <a class="js__popup__youtube" href="https://www.youtube.com/watch?v=lcFYdgZKZxY" title="Intro Video">
-                                <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-control-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>-->
-        </div>
-        <!-- End Swiper Wrapper -->
-
-        <!-- Arrows -->
-        <a href="javascript:void(0);" class="s-swiper__arrow-v1--right s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-right js__swiper-btn--next"></a>
-        <a href="javascript:void(0);" class="s-swiper__arrow-v1--left s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
-        <!-- End Arrows -->
-
-
     </div>
     <!--========== END SWIPER SLIDER ==========-->
 
     <!--========== PAGE CONTENT ==========-->
     <!-- Features -->
-    <div id="js__scroll-to-section1" class="container g-padding-y-80--xs g-padding-y-125--sm">
+    <div class="container text-center" style="padding: 50px;">
 
-        <center>
-            <img style="margin-top: -10%;" src="img/mainlogo_trans.png" />
-        </center>
-
-        <div class="g-text-center--xs g-margin-b-100--xs">
-
-            <!--<p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Welcome to hackSocIndore<br/>Event Registration Links</p>-->
-            
-            <h2 class="g-font-size-32--xs g-font-size-36--md"><a href="coc.html" target="_blank"
-                    class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Event Code Of Conduct</a></h2>
-            
-
-        </div>
-
-
-        <h2 class="g-font-size-32--xs g-font-size-36--md" style="text-align: center">Event Registration Links</h2>
-        <br />
-
-        <div class="g-text-center--xs g-margin-b-100--xs">
-
-            <!--<p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Welcome to hackSocIndore<br/>Event Registration Links</p>-->
-            <img style="margin-left: 7%; height:30%; width: 30%; float: left;" src="img/bodygit.png" />
-            <br /><br /><br /><br /><br />
-            <h2 class="g-font-size-32--xs g-font-size-36--md"><a href="https://goo.gl/forms/0aWq3dhlYZM1YtiP2" target="_blank"
-                    class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Feedback form for Linux
-                    Workshop</a></h2>
-            <h2 class="g-font-size-32--xs g-font-size-36--md"><a href="https://goo.gl/forms/zYruf8beqUY4Y2Kt2" target="_blank"
-                    class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Git and Github Workshop</a></h2>
-            <h2 class="g-font-size-32--xs g-font-size-36--md"><a onclick='alert("Registrations for this event are not open yet.");'
-                    class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Hacktobathon</a></h2>
-
-
-        </div>
-        <!--
-            <div class="row g-margin-b-60--xs g-margin-b-70--md">
-                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
-                    <div class="clearfix">
-                        <div class="g-media g-width-30--xs">
-                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".1s">
-                                <i class="g-font-size-28--xs g-color--primary ti-desktop"></i>
-                            </div>
-                        </div>
-                        <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Responsive Layout</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                 <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
-                    <div class="clearfix">
-                        <div class="g-media g-width-30--xs">
-                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".4s">
-                                <i class="g-font-size-28--xs g-color--primary ti-package"></i>
-                            </div>
-                        </div>
-                        <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Endless Possibilities</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
-                    <div class="clearfix">
-                        <div class="g-media g-width-30--xs">
-                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".5s">
-                                <i class="g-font-size-28--xs g-color--primary ti-star"></i>
-                            </div>
-                        </div>
-                        <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Powerful Performance</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
-                        </div>
-                    </div>
-                </div>
-                
-               
-                </div>
-            -->
+        <img src="img/mainlogo_trans.png" />
 
     </div>
 
-    <div>
-        <h2 class="g-font-size-32--xs g-font-size-36--md" style="text-align: center">SPONSORS</h2>
-        <br /><br />
-        <img style="margin-left: 15%; height:10%; width: 30%; float: left;" src="img/glogo.png" />
+    <div class="container-fluid" id="sponsors" style="background: #00a0f0; padding: 75px;">
 
-        <h3 style="margin-left: 58%;  " class="g-font-size-18--xs g-color--white"><a href="https://github.com/" target="_blank">GitHub
-                Inc.</a>
-            <font style="color:black;"><br /><br />Our Event Sponsor for <br />Linux and Git|GitHub Workshop.<br /></font>
-        </h3>
+        <h1 class="text-center heading">PAST SPONSORS AND PARTNERS</h1>
 
-        <br /><br /><br />
-        <img style="margin-left: 15%; height:10%; width: 30%; float: left;" src="img/alogo.png" />
+        <div class="row align-items-center">
 
-        <h3 style="margin-left: 58%;  " class="g-font-size-18--xs g-color--white"><a href="http://www.adited.com/"
-                target="_blank">ADITED Co-working 3.0</a>
-            <font style="color:black;"><br /><br />Our Venue Sponsor for <br />Linux Workshop.<br />We are grateful to
-                them for their support.</font>
-        </h3>
+            <div class="col-md-1 text-center"><img class="sponsor" src="img/sponsors/hogwartsLogo.png"/></div>
 
-        <br /><br /><br />
-        <img alt="Incuzpace logo" style="margin-left: 15%; margin-top: 0.5%; height:10%; width: 30%; float: left;" src="http://www.incuspaze.com/images/incuspaze_grey_logo.png" />
+            <div class="col-md-3 text-center"><img class="sponsor" src="img/sponsors/Incuspaze_Logo.png" width="95%"/></div>
 
-        <h3 style="margin-left: 58%;  " class="g-font-size-18--xs g-color--white"><a href="http://www.incuspaze.com/"
-                target="_blank">Incusapze Indore</a>
-            <font style="color:black;"><br /><br />Our Venue Sponsor for <br />MLH Local Hack Day.<br />We are grateful
-                to
-                them for their support.</font>
-        </h3>
+            <div class="col-md-4 text-center"><img class="main-sponsor" src="img/sponsors/github-logo.png"/></div>
 
-        <br /><br /><br />
-        <img style="margin-left: 25%; margin-top: 0.4%; height:3%; width: 10%; float: left;" src="https://hogwartscafe.github.io/images/hogwartsLogo.jpg" />
+            <div class="col-md-2 text-center"><img class="sponsor" src="img/sponsors/mlh-logo-color.png" width="90%"/></div>
 
-        <h3 style="margin-left: 58%;  " class="g-font-size-18--xs g-color--white"><a href="http://www.hogwartscafe.github.io/"
-                target="_blank">Hogwarts Cafe Indore</a>
-            <font style="color:black;"><br /><br />Our Food Sponsor for <br />MLH Local Hack Day.<br />We are grateful
-                to
-                them for their support.</font>
-        </h3>
+            <div class="col-md-2 text-center"><img class="sponsor" src="img/sponsors/adited-logo.png"/></div>
+
+        </div>
 
     </div>
 
-    <br /><br /><br /><br />
     <!-- End Features -->
 
-    <!-- Parallax -->
-    <div class="js__parallax-window" style="background: url(img/hacktoberfest_back.png) 50% 0 no-repeat fixed;">
-        <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
-            <div class="g-margin-b-80--xs">
-                <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white">See you next
-                    October!!</h2>
-            </div>
-            <a id="btnz77" href="https://hacktoberfest.digitalocean.com/" target="_blank" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50"
-                style="color: #fff; border-color: #fff;">Learn More</a>
-        </div>
-    </div>
-    <!-- End Parallax -->
-
     <!-- Culture -->
-    <div class="g-promo-section" id="about">
-        <div class="container g-padding-y-80--xs g-padding-y-125--sm">
-            <div class="row">
-                <div class="col-md-4 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
-                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Culture</p>
-                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                        <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md">About</h2>
+    <div class="container-fluid" id="about">
+        <div class="row">
+            <div class="row col-sm-8 align-items-center" style="padding-top: 50px">
+                <div class="col-sm-6">
+                    <p class="text-uppercase">Culture</p>
+                    <div>
+                        <h2>About</h2>
                     </div>
-                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                        <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md" style="text-transform: initial;">hackSocIndore</h2>
+                    <div>
+                        <h2>hackSocIndore</h2>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-offset-1">
-                    <p class="g-font-size-18--xs">Hacking and Programming society based at Indore.</p>
-                    <p class="g-font-size-18--xs">At hackSocIndore, we create an environment that brings developers
-                        together.
-                        We believe in "learn, try, code.", so bring your laptop to the workshops to start coding.<br /><br />
+                <div class="col-sm-6">
+                    <p> A community of developers that hosts workshops, tech meetups, Hack Days regularly, and enables project collaboration among its members!
+                        We believe in "learning by doing", so bring your laptop to the workshops to start coding.<br /><br />
                         Coding is awesome and we love to help you get started. Just come along to any of the free
-                        sessions and let's get coding!
+                        sessions and let's get set code!
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-3 g-promo-section__img-right--lg g-bg-position--center g-height-100-percent--md js__fullwidth-img">
-            <img class="img-responsive" src="img/1920x1080/06.jpg" alt="Image">
+            <div class="col-sm-4" style="overflow-x: hidden">
+                <img height="512px" src="img/about.jpg" alt="Image">
+            </div>
         </div>
     </div>
     <!-- End Culture -->
 
-    <!-- Feedback Form -->
-    <!--
-        <div class="g-bg-color--sky-light">
-            <div class="container g-padding-y-80--xs g-padding-y-125--sm">
-                <div class="g-text-center--xs g-margin-b-80--xs">
-                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Feedback</p>
-                    <h2 class="g-font-size-32--xs g-font-size-36--md">Send us a note</h2>
-                </div>
-                <form>
-                    <div class="row g-margin-b-40--xs">
-                        <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
-                            <div class="g-margin-b-20--xs">
-                                <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Name">
-                            </div>
-                            <div class="g-margin-b-20--xs">
-                                <input type="email" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
-                            </div>
-                            <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Phone">
-                        </div>
-                        <div class="col-sm-6">
-                            <textarea class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8" placeholder="* Your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="g-text-center--xs">
-                        <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        -->
-    <!-- End Feedback Form -->
-
     <!--========== FOOTER ==========-->
-    <footer class="g-bg-color--dark">
-        <!-- Links -->
-        <div class="g-hor-divider__dashed--white-opacity-lightest">
-            <div class="container g-padding-y-80--xs">
-                <div class="row">
-                    <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
-                        <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-
-                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="https://www.facebook.com/HackSocIndore/">Facebook</a></li>
-                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="https://www.instagram.com/hacksocindore/">Instagram</a></li>
-
-                        </ul>
-                    </div>
-                    <!--
-                        <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                
-                            </ul>
-                        </div>
-                    -->
-                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md"
-                        style="margin-left:33%;">
-                        <h3 class="g-font-size-18--xs g-color--white">hackSocIndore</h3>
-                        <p class="g-color--white-opacity">Hacking and Programming society based at Indore.</p>
-                    </div>
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-4">
+                    <a href="https://facebook.com/hacksocindore" target="_blank"><span style="color: white">Facebook</span></a> |
+                    <a href="https://instagram.com/hacksocindore" target="_blank"><span style="color: white">Instagram</span></a> |
+                    <a href="https://twitter.com/hack_soc" target="_blank"><span style="color: white">Twitter</span></a>
+                </div>
+                <div class="col-sm-4">
+                    © Copyright 2015 Ristorante Con Fusion
+                </div>
+                <div class="col-sm-4">
+                        Designed and Developed by <a href="https://github.com/harshmandalgi" target="_blank"><span>Harsh Mandalgi</span></a>
                 </div>
             </div>
         </div>
-        <!-- End Links -->
-
-        <!-- Copyright -->
-        <div class="container g-padding-y-50--xs">
-            <div class="row">
-                <div class="col-xs-6">
-                    <a href="http://hacksocindore.github.io/">
-                        <img class="g-width-100--xs g-height-auto--xs" style="height:58px; width:200px;" src="img/namelogo_trans.png"
-                            alt="Logo">
-                    </a>
-                </div>
-                <div class="col-xs-6 g-text-right--xs">
-                    <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="http://hacksocindore.github.io">hackSocIndore</a>
-                        Website developed by <a href="http://harshmandalgi.github.io/">Harsh Mandalgi</a> at <a href="http://hacksocindore.github.io/">hackSocIndore</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- End Copyright -->
     </footer>
     <!--========== END FOOTER ==========-->
 
-    <!-- Back To Top -->
-    <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
-
-    <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
-    <!-- Vendor -->
-    <script type="text/javascript" src="vendor/jquery.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
-    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.smooth-scroll.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
-    <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
-    <script type="text/javascript" src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="vendor/swiper/swiper.jquery.min.js"></script>
-    <script type="text/javascript" src="vendor/waypoint.min.js"></script>
-    <script type="text/javascript" src="vendor/counterup.min.js"></script>
-    <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
-    <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
-
-    <!-- General Components and Settings -->
-    <script type="text/javascript" src="js/global.min.js"></script>
-    <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
-    <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
-    <script type="text/javascript" src="js/components/magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/components/swiper.min.js"></script>
-    <script type="text/javascript" src="js/components/counter.min.js"></script>
-    <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
-    <script type="text/javascript" src="js/components/parallax.min.js"></script>
-    <script type="text/javascript" src="js/components/google-map.min.js"></script>
-    <script type="text/javascript" src="js/components/wow.min.js"></script>
-    <!--========== END JAVASCRIPTS ==========-->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                var $text = $(".text-white");
+                $text.toggleClass('dark', $(this).scrollTop() > $nav.height())
+            });
+        });
+    </script>
 
 </body>
 <!-- End Body -->
