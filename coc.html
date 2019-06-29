@@ -4,8 +4,6 @@
 
 <head>
     <!-- Basic -->
-
-    
     
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024">
@@ -15,21 +13,22 @@
     <!-- Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
 
-    <!-- Vendor Styles -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- Theme Styles -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/global/global.css" rel="stylesheet" type="text/css" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- Bootstrap --><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
 </head>
 <!-- End Head -->
 
@@ -37,255 +36,85 @@
 
 <body>
 
-    <!--========== HEADER ==========-->
-    <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
-        <!-- Navbar -->
-        <div class="s-header__navbar">
-            <div class="s-header__container">
-                <div class="s-header__navbar-row">
-                    <div class="s-header__navbar-row-col">
-                        <!-- Logo -->
-                        <div class="s-header__logo">
-                            <a href="http://hacksocindore.github.io/" class="s-header__logo-link">
-                                <img class="s-header__logo-img s-header__logo-img-default" src="img/namelogo_trans.png"
-                                    width="210" height="60" alt="Logo-upper-layer">
-                                <img class="s-header__logo-img s-header__logo-img-shrink" src="img/namelogo_trans.png"
-                                    width="210" height="60" alt="Logo-lower-layer">
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
-                    <div class="s-header__navbar-row-col">
-                        <!-- Trigger -->
-                        <a href="javascript:void(0);" class="s-header__trigger js__trigger">
-                            <span class="s-header__trigger-icon"></span>
-                            <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
-                                <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25"
-                                    stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-                            </svg>
-                        </a>
-                        <!-- End Trigger -->
-                    </div>
-                </div>
+    <!--========== NAVBAR ==========-->
+    <nav class="navbar fixed-top navbar-expand-sm">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#"><img src="img/namelogo_trans.png" width="200px"/></a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"><span class="text-dark">Events</span></a>
+        </li>
+        <li class="nav-item dark-text">
+            <a class="nav-link" href="index.html"><span class="text-dark">Sponsors</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"><span class="text-dark">About</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="coc.html"><span class="text-dark">Code of Conduct</span></a>
+        </li>
+    </ul>
+</nav>
+    <!--========== END NAVBAR ==========-->
+
+    <div class="container" style="padding: 100px; text-align: justify">
+        <div class="row">
+            <div>
+                <h2 class="text-center">Event Code of Conduct</h2>
+                <p style="justify-content: space-around">
+                    hackSocIndore is dedicated to providing a inclusive and harassment-free experience for participants at all of our events. <br/>
+                    We are working events intended for networking and collaboration in the community. <br/>
+                    They exist to encourage the open exchange of ideas and expression and require an environment that recognizes the
+                    inherent worth of every person and group. <br/>
+                    While at hackSocIndore event or related social events, any participants, including members, speakers, attendees,
+                    volunteers, sponsors, exhibitors, booth staff and anyone else, should not engage in harassment in any form. <br/>
+                </p>
+
+            </div>
+            <div>
+                <h4 class="text-center">Expected Behaviour</h4>
+                <p>
+                    All event participants are expected to behave in accordance with  professional standards, with both this Code of Conduct as well as their respective employer’s policies & hackSocIndore’s policies governing appropriate workplace behavior, and applicable laws.
+                </p>
+
+            </div>
+            <div>
+                <h4 class="text-center">Unacceptable Behaviour</h4>
+                <p>
+                    Harassment will not be tolerated in any form, including but not limited to harassment based on gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion or any other status protected by laws in which the conference or program is being held.
+
+                    <br/>Harassment includes the use of abusive, offensive, or degrading language, intimidation, stalking, harassing photography or recording, inappropriate physical contact, sexual imagery and unwelcome sexual advances or request for sexual favors. Any report of harassment at one of our events will be addressed immediately. Participants asked to stop any harassing behavior are expected to comply immediately. Anyone who witnesses or is subjected to unacceptable behavior should notify the event organizer at once.
+
+                    <br/>Speakers should not use sexual language, images, or any language or images that could constitute harassment as defined above in their talks.  <br/>Speakers should also use inclusive language.
+                </p>
+
             </div>
         </div>
-        <!-- End Navbar -->
-
-        <!-- Overlay -->
-        <div class="s-header-bg-overlay js__bg-overlay">
-            <!-- Nav -->
-            <nav class="s-header__nav js__scrollbar">
-                <div class="container-fluid">
-                    <!-- Menu List -->
-                    <ul class="list-unstyled s-header__nav-menu">
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active">Event
-                                Registration</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                target="_blank" href="https://goo.gl/forms/0aWq3dhlYZM1YtiP2">Feedback Form for Linux
-                                Workshop-16/09/2018</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                href="https://goo.gl/forms/zYruf8beqUY4Y2Kt2" target="_blank">Git and Github Workshop</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                onclick='alert("Registrations for this event are not open yet.");'>Hacktobathon</a></li>
-                        <!--<li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" onclick='alert("Registrations for this event are not open yet.");'>Hacktobathon</a></li>-->
-                    </ul>
-                    <!-- End Menu List -->
-
-                    <!-- Menu List -->
-                    <ul class="list-unstyled s-header__nav-menu">
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                                onclick='alert("Club Member Registrations are not open yet.");'>Join Us</a></li>
-
-                    </ul>
-                    <!-- End Menu List -->
-                </div>
-            </nav>
-            <!-- End Nav -->
-
-
-
-            <!-- Action -->
-            <ul class="list-inline s-header__action s-header__action--rb">
-                <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="https://www.facebook.com/HackSocIndore/">
-                        <i class="g-padding-r-5--xs ti-facebook"></i>
-                        <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
-                    </a>
-                </li>
-                <!--<li class="s-header__action-item">
-                        <a class="s-header__action-link" href="#">
-                            <i class="g-padding-r-5--xs ti-twitter"></i>
-                            <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
-                        </a>
-                    </li>-->
-                <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="https://www.instagram.com/hacksocindore/">
-                        <i class="g-padding-r-5--xs ti-instagram"></i>
-                        <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- End Action -->
-        </div>
-        <!-- End Overlay -->
-    </header>
-    <!--========== END HEADER ==========-->
-
-    <!--========== SWIPER SLIDER ==========-->
-    <br/><br/><br/><br/><br/><br/><br/><br/>
-    <div>
-        <h2 class="g-font-size-32--xs g-font-size-36--md" style="text-align: center">Event Code of Conduct</h2>
-        <br /><br />
-    
-        <p style="margin-left: 300px;">
-            hackSocIndore is dedicated to providing a inclusive and harassment-free experience for participants at all of our events. <br/>
-            We are working events intended for networking and collaboration in the community. <br/>
-            They exist to encourage the open exchange of ideas and expression and require an environment that recognizes the <br/>
-            inherent worth of every person and group. <br/>
-            While at hackSocIndore event or related social events, any participants, including members, speakers, attendees, <br/>
-            volunteers, sponsors, exhibitors, booth staff and anyone else, should not engage in harassment in any form. <br/>
-        </p>
-
     </div>
-    <br/><br/><br/>
-    <div>
-        <h2 class="g-font-size-32--xs g-font-size-36--md" style="text-align: center">Expected Behaviour</h2>
-        <br /><br />
-    
-        <p style="margin-left: 300px;">
-            All event participants are expected to behave in accordance with  professional standards,<br/> with both this Code of Conduct as well as their respective employer’s policies & <br/>hackSocIndore’s policies governing appropriate workplace behavior, <br/>and applicable laws.
-        </p>
-
-    </div>
-    <br/><br/><br/>
-    <div>
-        <h2 class="g-font-size-32--xs g-font-size-36--md" style="text-align: center">Unacceptable Behaviour</h2>
-        <br /><br />
-    
-        <p style="margin-left: 300px;">
-            Harassment will not be tolerated in any form, including but not limited to harassment based on gender, <br/>gender identity and expression, sexual orientation, disability, physical appearance, <br/>body size, race, age, religion or any other status protected by laws in which <br/>the conference or program is being held.
-
-            <br/>Harassment includes the use of abusive, offensive, or degrading language, <br/>intimidation, stalking, harassing photography or recording, inappropriate physical contact, sexual imagery and <br/>unwelcome sexual advances or request for sexual favors. Any report of harassment at one <br/>of our events will be addressed immediately. Participants asked to stop any <br/>harassing behavior are expected to comply immediately. Anyone who witnesses or is <br/>subjected to unacceptable behavior should notify the event organizer at once.
-
-            <br/>Speakers should not use sexual language, images, or any language or images that could <br/>constitute harassment as defined above in their talks.  <br/>Speakers should also use inclusive language. 
-        </p>
-
-    </div>
-    <br/><br/><br/><br/>
-    <!-- Feedback Form -->
-    <!--
-        <div class="g-bg-color--sky-light">
-            <div class="container g-padding-y-80--xs g-padding-y-125--sm">
-                <div class="g-text-center--xs g-margin-b-80--xs">
-                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Feedback</p>
-                    <h2 class="g-font-size-32--xs g-font-size-36--md">Send us a note</h2>
-                </div>
-                <form>
-                    <div class="row g-margin-b-40--xs">
-                        <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
-                            <div class="g-margin-b-20--xs">
-                                <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Name">
-                            </div>
-                            <div class="g-margin-b-20--xs">
-                                <input type="email" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
-                            </div>
-                            <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Phone">
-                        </div>
-                        <div class="col-sm-6">
-                            <textarea class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8" placeholder="* Your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="g-text-center--xs">
-                        <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        -->
-    <!-- End Feedback Form -->
 
     <!--========== FOOTER ==========-->
-    <footer class="g-bg-color--dark">
-        <!-- Links -->
-        <div class="g-hor-divider__dashed--white-opacity-lightest">
-            <div class="container g-padding-y-80--xs">
-                <div class="row">
-                    <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
-                        <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-
-                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="https://www.facebook.com/HackSocIndore/">Facebook</a></li>
-                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="https://www.instagram.com/hacksocindore/">Instagram</a></li>
-
-                        </ul>
-                    </div>
-                    <!--
-                        <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                
-                            </ul>
-                        </div>
-                    -->
-                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md"
-                        style="margin-left:33%;">
-                        <h3 class="g-font-size-18--xs g-color--white">hackSocIndore</h3>
-                        <p class="g-color--white-opacity">Hacking and Programming society based at Indore.</p>
-                    </div>
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-4">
+                    <a href="https://facebook.com/hacksocindore" target="_blank"><span style="color: white">Facebook</span></a> |
+                    <a href="https://instagram.com/hacksocindore" target="_blank"><span style="color: white">Instagram</span></a> |
+                    <a href="https://twitter.com/hack_soc" target="_blank"><span style="color: white">Twitter</span></a>
+                </div>
+                <div class="col-sm-4">
+                    © Copyright 2019 hackSocIndore™
+                </div>
+                <div class="col-sm-4">
+                    Designed and Developed by <a href="https://github.com/harshmandalgi" target="_blank"><span>Harsh Mandalgi</span></a>
                 </div>
             </div>
         </div>
-        <!-- End Links -->
-
-        <!-- Copyright -->
-        <div class="container g-padding-y-50--xs">
-            <div class="row">
-                <div class="col-xs-6">
-                    <a href="http://hacksocindore.github.io/">
-                        <img class="g-width-100--xs g-height-auto--xs" style="height:58px; width:200px;" src="img/namelogo_trans.png"
-                            alt="Logo">
-                    </a>
-                </div>
-                <div class="col-xs-6 g-text-right--xs">
-                    <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="http://hacksocindore.github.io">hackSocIndore</a>
-                        Website developed by <a href="http://harshmandalgi.github.io/">Harsh Mandalgi</a> at <a href="http://hacksocindore.github.io/">hackSocIndore</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- End Copyright -->
     </footer>
     <!--========== END FOOTER ==========-->
 
-    <!-- Back To Top -->
-    <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
-
-    <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
-    <!-- Vendor -->
-    <script type="text/javascript" src="vendor/jquery.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
-    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.smooth-scroll.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
-    <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
-    <script type="text/javascript" src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="vendor/swiper/swiper.jquery.min.js"></script>
-    <script type="text/javascript" src="vendor/waypoint.min.js"></script>
-    <script type="text/javascript" src="vendor/counterup.min.js"></script>
-    <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
-    <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
-
-    <!-- General Components and Settings -->
-    <script type="text/javascript" src="js/global.min.js"></script>
-    <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
-    <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
-    <script type="text/javascript" src="js/components/magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/components/swiper.min.js"></script>
-    <script type="text/javascript" src="js/components/counter.min.js"></script>
-    <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
-    <script type="text/javascript" src="js/components/parallax.min.js"></script>
-    <script type="text/javascript" src="js/components/google-map.min.js"></script>
-    <script type="text/javascript" src="js/components/wow.min.js"></script>
-    <!--========== END JAVASCRIPTS ==========-->
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 <!-- End Body -->
