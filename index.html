@@ -26,7 +26,7 @@
     <!-- Bootstrap --><!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <!-- Font Awesome -->
-    <link src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://kit.fontawesome.com/3d24a75364.js"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Popper JS -->
@@ -45,28 +45,35 @@
 
     <!--========== HEADER ==========-->
     <!-- Start Navbar -->
-    <nav class="navbar fixed-top navbar-expand-sm">
+    <nav class="navbar fixed-top navbar-expand-lg">
         <!-- Brand/logo -->
         <a class="navbar-brand" href="#"><img src="img/logos/hacksoc-logo-custom.png" width="200px"/></a>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars" style="color:white"></i>
+        </button>
+
         <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#myCarousel"><span class="text-white">Events</span></a>
-            </li>
-            <li class="nav-item dark-text">
-                <a class="nav-link" href="#sponsors"><span class="text-white">Sponsors</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about"><span class="text-white">About</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="coc.html" target="_blank"><span class="text-white">Code of Conduct</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://hacksoc-slack.herokuapp.com" target="_blank"><span class="text-white">Join Us</span></a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse navbar-default" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#myCarousel">Events</a>
+                </li>
+                <li class="nav-item dark-text">
+                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="coc.html" target="_blank">Code of Conduct</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://hacksoc-slack.herokuapp.com" target="_blank">Join Us</a>
+                </li>
+            </ul>
+            </ul>
+        </div>
     </nav>
     <!-- End Navbar -->
     <!--========== END HEADER ==========-->
@@ -112,10 +119,12 @@
     <div class="container text-center" style="padding: 50px;">
 
         <div class="row align-items-center">
-            <div class="col-sm-6" style="padding: 50px;">
-                <iframe src="https://calendar.google.com/calendar/b/1/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=a3NlYmEza24wdGVlaDE0MzQ4MTN2ZWI3ZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E4C441&amp;showTabs=0&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=1" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+            <div class="col-sm-12 col-md-6" style="padding: 50px;">
+                <div class="googleCalendar flex-container">
+                    <iframe class="flex-item" src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=a3NlYmEza24wdGVlaDE0MzQ4MTN2ZWI3ZWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E4C441&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
             </div>
-            <div class="col-sm-6 text-center">
+            <div class="col-sm-12 col-md-6 text-center">
                 <img src="img/mainlogo_trans.png" height="60%" width="60%"/>
             </div>
         </div>
@@ -128,23 +137,23 @@
 
         <div class="row align-items-center">
 
-            <div class="col-md-1 text-center">
-                <a href="https://hogwartscafe.github.io/" target="_blank"><img class="sponsor" src="img/sponsors/hogwartsLogo.png"/></a>
+            <div class="col-md-1 col-sm-6 text-center">
+                <a href="https://hogwartscafe.github.io/" target="_blank"><img class="sponsor" src="img/sponsors/hogwartsLogo.png" style="margin: 0 !important;"/></a>
             </div>
 
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 col-sm-6 text-center">
                 <a href="https://www.incuspaze.com/" target="_blank"><img class="sponsor" src="img/sponsors/Incuspaze_Logo.png" width="95%"/></a>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 col-sm-12 text-center">
                 <a href="https://github.com" target="_blank"><img class="main-sponsor" src="img/sponsors/github-logo.png"/></a>
             </div>
 
-            <div class="col-md-2 text-center">
+            <div class="col-md-2 col-sm-6 text-center">
                 <a href="https://mlh.io/" target="_blank"><img class="sponsor" src="img/sponsors/mlh-logo-color.png" width="90%"/></a>
             </div>
 
-            <div class="col-md-2 text-center">
+            <div class="col-md-2 col-sm-6 text-center">
                 <a href="https://www.adited.com/" target="_blank"><img class="sponsor" src="img/sponsors/adited-logo.png"/></a>
             </div>
 
@@ -156,9 +165,9 @@
 
     <!-- Culture -->
     <div class="container-fluid mr-0 pr-0" id="about">
-        <div class="row">
-            <div class="row col-sm-8 align-items-center pr-0 mr-0" style="padding-top: 50px">
-                <div class="col-sm-6">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-3 text-center heading">
+                <div>
                     <h5 class="text-uppercase">Culture</h5>
                     <div>
                         <h1>About</h1>
@@ -167,18 +176,20 @@
                         <h1>hackSocIndore</h1>
                     </div>
                 </div>
-                <div class="col-sm-6">
+            </div>
+            <div class="row col-sm-12 col-md-9 align-items-center mr-0 pr-0">
+                <div class="col-sm-8 center">
                     <p>"hackSoc? as in hacking computers?" <br>Although we have members who can do that, we do NOT collectively do that here.</p>
 
                     <p> hackSoc is <b>a community of developers that hosts workshops, tech meetups, Hack Days regularly, and enables project collaboration among its members!</b>
-                        <br/><br/>We believe in "learning by doing", so bring your laptop to the workshops to start coding.
+                        <br/><br/>We believe in "learning by doing", so bring along your laptops to the workshops to start coding.
                         Coding is awesome and we love to help you get started. Just come along to any of the free
                         sessions and let's get set code!
                     </p>
                 </div>
-            </div>
-            <div class="col-sm-4 align-items-right" style="max-width: 100vw; overflow-x: hidden; text-indent: -250px;">
-                <img height="512px" src="img/about.jpg" alt="Image">
+                <div class="col-sm-4 text-right mr-0 pr-0 ml-0 pl-0" style="width: 100%; overflow-x: hidden;">
+                    <img height="448px" src="img/about.jpg" alt="Image">
+                </div>
             </div>
         </div>
     </div>
