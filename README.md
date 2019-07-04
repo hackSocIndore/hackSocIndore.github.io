@@ -2,7 +2,7 @@
 
 ## Communication
 
-Join our community on **Slack**! [hacksocindore.slack.com](hackSoc-slack.herokuapp.com) <br>
+Join our community on **Slack**! [hacksocindore.slack.com](https://hacksoc-slack.herokuapp.com/) <br>
 It various useful channels like #general, #random, #events, #jobs, #memes, etc.
 
 **Social Media:**<br><br>
