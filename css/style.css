@@ -1,9 +1,11 @@
 .fixed-top.scrolled {
     background-color: #222324 !important;
-    transition: background-color 500ms linear;
 }
 .text-white.dark {
     color: #222324 !important;
+}
+.fixed-top {
+    transition: background-color 500ms linear;
 }
 .main-sponsor {
     max-height: 12vh;
