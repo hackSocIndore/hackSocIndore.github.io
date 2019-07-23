@@ -66,3 +66,19 @@ h1 {
 li a {
     color: white;
 }
+
+.cu{
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.para_cu{
+    color: dimgrey;
+    padding-bottom: 20px;
+}
+
+#cu_a{
+    background-color: #222324;
+    color: white;
+}
