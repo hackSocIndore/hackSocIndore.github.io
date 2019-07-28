@@ -1,6 +1,9 @@
 .fixed-top.scrolled {
     background-color: #222324 !important;
 }
+.nav-link{
+    color: black;
+}
 .text-white.dark {
     color: #222324 !important;
 }
