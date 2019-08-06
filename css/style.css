@@ -29,7 +29,8 @@
     padding-left: 25px;
     padding-right: 25px;
 }
-html, body {
+html,
+body {
     width: 100%;
     overflow-x: hidden;
 }
@@ -49,14 +50,14 @@ h1 {
     justify-content: center;
     flex-direction: column;
 }
-.googleCalendar{
+.googleCalendar {
     position: relative;
     height: 0;
     width: 99%;
     padding-bottom: 99%;
 }
 
-.googleCalendar iframe{
+.googleCalendar iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,18 +68,63 @@ li a {
     color: white;
 }
 
-.cu{
-    background-color: lightgray;
-    padding-top: 50px;
-    padding-bottom: 60px;
+.carousel-wraper {
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.para_cu{
-    color: dimgrey;
-    padding-bottom: 20px;
-}
-
-#cu_a{
-    background-color: #222324;
-    color: white;
+@media (max-width: 680px) {
+    .carousel-wraper {
+        height: auto !important;
+    }
+    .section-row {
+        justify-content: center !important;
+    }
+    .section-row > * {
+        padding: 10px 0 0 0;
+        flex: 0 0 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .for-mobile {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    .for-mobile > * {
+        flex: 1;
+        margin: 0;
+        padding: 0 15px;
+    }
+    .for-mobile img {
+        width: 100%;
+    }
+    .fs-3 h1,
+    .fs-3 h5,
+    .fs-3 p {
+        line-height: 1.4;
+        font-size: 2rem !important;
+    }
+    .fs-3 h5 {
+        font-size: 1.1rem !important;
+    }
+    .fs-3 h1 {
+        font-size: 2.4rem !important;
+    }
+    footer .row {
+        font-size: 1.4rem;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    footer .row > * {
+        max-width: 100%;
+        flex: 1;
+        text-align: center;
+    }
 }
