@@ -82,6 +82,16 @@ li a {
     background-color: #222324;
     color: white;
 }
+
+.person {
+    margin-top: 12px;
+    border: 2px solid transparent;
+}
+
+.person:hover {
+    border-color: whitesmoke;
+}
+
 .active{
 	background-color: #dee2e661;
 }
