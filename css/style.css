@@ -1,38 +1,46 @@
 .fixed-top.scrolled {
     background-color: #222324 !important;
 }
+
 .text-white.dark {
     color: #222324 !important;
 }
+
 .fixed-top {
     transition: background-color 500ms linear;
 }
+
 .main-sponsor {
     max-height: 12vh;
     max-width: 50vw;
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 .sponsor {
     max-height: 10vh;
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 .row-footer {
     padding: 20px 0;
     background-color: #222324;
     color: white;
 }
+
 .heading {
     margin-top: 50px;
     margin-bottom: 50px;
     padding-left: 25px;
     padding-right: 25px;
 }
+
 html, body {
     width: 100%;
     overflow-x: hidden;
 }
+
 p {
     font-family: Inter, -apple-system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -40,45 +48,55 @@ p {
     color: inherit;
     line-height: 24px;
 }
+
 h1 {
     font-family: Castledown, -apple-system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
+
 .center {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.googleCalendar{
+
+.googleCalendar {
     position: relative;
     height: 0;
     width: 99%;
     padding-bottom: 99%;
 }
 
-.googleCalendar iframe{
+.googleCalendar iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
+
 li a {
     color: white;
 }
 
-.cu{
+.cu {
     background-color: lightgray;
     padding-top: 50px;
     padding-bottom: 60px;
 }
 
-.para_cu{
+.para_cu {
     color: dimgrey;
     padding-bottom: 20px;
 }
 
-#cu_a{
+#cu_a {
     background-color: #222324;
     color: white;
+}
+
+.navbar {
+    background-color: rgba(211, 211, 211, 0.5);
+    background-image: linear-gradient(315deg, rgba(211, 211, 211, 0.5) 0%, rgba(127, 140, 141, 0.5) 74%);
+    box-shadow: rgb(127, 140, 141) 0px 5px 15px;
 }
