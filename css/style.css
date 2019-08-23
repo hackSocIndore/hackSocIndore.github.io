@@ -96,7 +96,6 @@ li a {
 }
 
 .navbar {
-    background-color: rgba(211, 211, 211, 0.5);
-    background-image: linear-gradient(315deg, rgba(211, 211, 211, 0.5) 0%, rgba(127, 140, 141, 0.5) 74%);
-    box-shadow: rgb(127, 140, 141) 0px 5px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
