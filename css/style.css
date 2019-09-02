@@ -95,3 +95,11 @@ li a {
 .active{
 	background-color: #dee2e661;
 }
+
+.img-container{
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+}
