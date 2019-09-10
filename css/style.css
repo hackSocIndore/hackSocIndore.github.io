@@ -85,3 +85,22 @@ li a {
 .active{
 	background-color: #dee2e661;
 }
+
+#myCarousel{
+    background-image: url(../header.jpeg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 40%;
+    margin-top: 8vh;
+}
+
+#myCarouselM{
+    background-image: url(../header.jpeg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 40%;
+    margin-top: 8vh;
+	background-position: center;
+}
