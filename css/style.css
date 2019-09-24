@@ -103,3 +103,59 @@ li a {
     flex-direction: column;
     object-fit: contain;
 }
+
+#myCarousel{
+	width: 100%;
+    height: 60vh;
+    background: radial-gradient(circle, rgb(69, 69, 69) 10%, rgb(38, 38, 38) 36%);
+    padding-top: 7vh;
+}
+
+
+
+#icons{
+	text-align: center;
+    display: block;
+    padding-top: 3%;
+	margin: auto;
+	width: 100%;
+}
+#git{
+	background-image: url(../img/logos/git3.png);
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    display: inline-block;
+}
+#fb{
+	background-image: url(../img/logos/fb3.png);
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    display: inline-block;
+}
+#insta{
+	background-image: url(../img/logos/insta3.png);
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    display: inline-block;
+}
+#wa{
+	background-image: url(../img/logos/wa3.png);
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    display: inline-block;
+}
+#slack{
+	background-image: url(../img/logos/slack3.png);
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    display: inline-block;
+}
+i{
+	margin-right: 2%;
+	margin-left: 2%;
+}
